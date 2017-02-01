@@ -1,0 +1,9 @@
+---
+boxen::personal::homebrew_packages:
+  - pstree
+  - htop
+
+boxen::personal::osx_apps:
+  - google-chrome
+  - spotify
+
