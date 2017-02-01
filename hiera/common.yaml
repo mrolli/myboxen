@@ -1,0 +1,8 @@
+---
+ruby::global::version: "2.3.3"
+ruby::build::ensure: 'v20170201'
+ruby::rbenv_plugins:
+  rbenv-vars:
+    ensure: v1.2.0
+    source: rbenv//rbenv-vars
+
