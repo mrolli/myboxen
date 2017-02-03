@@ -1,9 +1,14 @@
 ---
 boxen::personal::homebrew_packages:
-  - pstree
+  - ack
+  - findutils
+  - gnu-tar
   - htop
+  - pstree
+  - tmux
 
 boxen::personal::osx_apps:
+  - alfred
   - google-chrome
   - spotify
 

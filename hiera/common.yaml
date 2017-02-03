@@ -1,8 +1,14 @@
 ---
-ruby::global::version: "2.3.3"
+
+# Ruby tweaking to meet certain versions
+ruby::global::version: '2.3.3'
 ruby::build::ensure: 'v20170201'
-ruby::rbenv_plugins:
+ruby::rbenv::ensure: 'v1.1.0'
+ruby::rbenv::plugins:
   rbenv-vars:
-    ensure: v1.2.0
-    source: rbenv//rbenv-vars
+    ensure: 'v1.2.0'
+    source: 'rbenv/rbenv-vars'
+  rbenv-gem-rehash:
+    ensure: 'v1.0.0'
+    source: 'rbenv/rbenv-gem-rehash'
 

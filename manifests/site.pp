@@ -53,7 +53,7 @@ Homebrew::Formula <| |> -> Package <| |>
 
 node default {
   # core modules, needed for most things
-  #include dnsmasq
+  include dnsmasq
   include git
   #include hub
   #include nginx
@@ -68,20 +68,18 @@ node default {
   #ruby::version { '2.0.0': }
   #ruby::version { '2.1.8': }
   #ruby::version { '2.2.4': }
-  ruby::version { '2.2.6': }
-  ruby::version { '2.3.3': }
 
   # common, useful packages
-  package {
-    [
-      'ack',
-      'findutils',
-      'gnu-tar'
-    ]:
-  }
-
-  #file { "${boxen::config::srcdir}/our-boxen":
-  #  ensure => link,
-  #  target => $boxen::config::repodir
+  #package {
+  #  [
+  #    'ack',
+  #    'findutils',
+  #    'gnu-tar'
+  #  ]:
   #}
+
+  file { "${boxen::config::srcdir}/our-boxen":
+    ensure => link,
+    target => $boxen::config::repodir
+  }
 }
