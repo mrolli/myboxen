@@ -4,11 +4,20 @@ boxen::personal::homebrew_packages:
   - findutils
   - gnu-tar
   - htop
+  - packer
+  - packer-completion
   - pstree
   - tmux
 
 boxen::personal::osx_apps:
+  - 1password
   - alfred
+  - docker
   - google-chrome
+  - iterm2
   - spotify
+  - textmate
+  - vagrant
+  - virtualbox
+  - vlc
 
